@@ -16,10 +16,11 @@ export default function Index() {
     <main>
       
         <Image
-          className="px-5"
+          className="px-5 py-5"
           src={homeImage}
           alt="ホーム写真"
         />
+        <p className="text-right">「世界の女王マリア大聖堂」カナダ・モントリオールにて撮影</p>
         {/* <Intro /> */}
         {/* <HeroPost
           title={heroPost.title}
