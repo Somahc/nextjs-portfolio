@@ -1,15 +1,14 @@
-import Footer from "@/app/_components/footer";
 import { CMS_NAME, HOME_OG_IMAGE_URL } from "@/lib/constants";
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
 import Container from "@/app/_components/container";
 import { Providers } from "@/app/_components/providers";
 import ThemeSwitch from "@/app/_components/ThemeSwitch";
 import "./globals.css";
 import Link from "next/link";
 import "zenn-content-css";
+import { Noto_Sans_JP } from "next/font/google";
 
-const inter = Inter({ subsets: ["latin"] });
+const notoSansJp = Noto_Sans_JP({ weight: "400", subsets: ["latin"] });
 
 export const metadata: Metadata = {
   title: `Next.js Blog Example with ${CMS_NAME}`,
@@ -62,7 +61,7 @@ export default function RootLayout({
       </head>
 
 
-      <body className={inter.className}>
+      <body className={notoSansJp.className}>
         <Providers>
           <Container>
             <header className="text-gray-600 body-font">
