@@ -4,6 +4,7 @@ import Image from "next/image";
 import { PiButterflyFill } from "react-icons/pi";
 import { SiZenn } from "react-icons/si";
 import { FaGithub } from "react-icons/fa";
+import { SiDuolingo } from "react-icons/si";
 
 
 
@@ -23,7 +24,8 @@ export const Page = () => {
         <div className="flex justify-center text-2xl pb-4">
             <a href="https://bsky.app/profile/s1greni.bsky.social"><PiButterflyFill className="mr-2 hover:fill-blue-400 duration-300" size={40} color={'#696969'} /></a>
             <a href="https://zenn.dev/somahc"><SiZenn className="mr-2 hover:fill-blue-400 duration-300" size={40} color={'#696969'} /></a>
-            <a href="https://github.com/Somahc"><FaGithub className="hover:fill-blue-400 duration-300" size={40} color={'#696969'} /></a>
+            <a href="https://github.com/Somahc"><FaGithub className="mr-2 hover:fill-blue-400 duration-300" size={40} color={'#696969'} /></a>
+            <a href="https://www.duolingo.com/profile/VKX4266449"><SiDuolingo className="mr-2 hover:fill-green-400 duration-300" size={40} color={'#696969'} /></a>
         </div>
         <p className="pb-5">Web系エンジニアを目指して勉強中の学生です。小学生の時に父のお下がりのノートパソコンで遊ばせてもらったことからIT系の仕事に興味を持つようになり、大学入学後のプログラミングの授業も楽しく受けていて自信もあったのですが、3年次に配属されたゼミの同期や参加したインターンで同世代のレベルの高さに圧倒されました。そんな彼らに追いつくべく、フロントエンドを中心にバックエンドやモバイルアプリ開発、競プロなど様々なことにチャレンジ中です。</p>
 

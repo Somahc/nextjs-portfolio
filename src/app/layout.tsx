@@ -7,6 +7,7 @@ import { Providers } from "@/app/_components/providers";
 import ThemeSwitch from "@/app/_components/ThemeSwitch";
 import "./globals.css";
 import Link from "next/link";
+import "zenn-content-css";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -25,6 +26,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="ja" suppressHydrationWarning>
+      {/* <script src="https://embed.zenn.studio/js/listen-embed-event.js"></script> */}
       <head>
         <link
           rel="apple-touch-icon"
