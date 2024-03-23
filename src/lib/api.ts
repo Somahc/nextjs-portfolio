@@ -1,4 +1,5 @@
-import { Post } from "@/interfaces/post";
+// import { Post } from "@/interfaces/post";
+import { SimplePost } from "@/interfaces/simple-post";
 import fs from "fs";
 import matter from "gray-matter";
 import { join } from "path";
@@ -15,10 +16,10 @@ export function getPostBySlug(slug: string) {
   const fileContents = fs.readFileSync(fullPath, "utf8");
   const { data, content } = matter(fileContents);
 
-  return { ...data, slug: realSlug, content } as Post;
+  return { ...data, slug: realSlug, content } as SimplePost;
 }
 
-export function getAllPosts(): Post[] {
+export function getAllPosts(): SimplePost[] {
   const slugs = getPostSlugs();
   const posts = slugs
     .map((slug) => getPostBySlug(slug))

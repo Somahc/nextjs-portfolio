@@ -72,7 +72,7 @@ export default function RootLayout({
                 </Link>
                 <nav className="md:mr-auto md:ml-4 md:py-1 md:pl-4 md:border-l md:border-gray-400	flex flex-wrap items-center text-base justify-center">
                   <Link href="/about" className="mr-5 hover:text-gray-300">About</Link>
-                  <Link href="/blog" className="mr-5 hover:text-gray-300">Blog</Link>
+                  <Link href="/posts" className="mr-5 hover:text-gray-300">Blog</Link>
                 </nav>
                 <ThemeSwitch />
               </div>
