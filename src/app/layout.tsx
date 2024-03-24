@@ -78,7 +78,7 @@ export default function RootLayout({
               </div>
             </header>
 
-            <div className="">{children}</div>
+            <div className="min-h-svh">{children}</div>
             {/* <Footer /> */}
             <footer className="text-gray-600 body-font">
               <div className="">

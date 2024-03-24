@@ -9,10 +9,10 @@ type Props = {
   // coverImage: string;
   date: string;
   author: Author;
+  emoji: string;
 };
 
-export function PostHeader({ title, date, author }: Props) {
-  console.log(author.name);
+export function PostHeader({ title, date, author, emoji }: Props) {
   return (
     <>
       {/* <PostTitle>{title}</PostTitle> */}
@@ -22,16 +22,19 @@ export function PostHeader({ title, date, author }: Props) {
       {/* <div className="mb-8 md:mb-16 sm:mx-0">
         <CoverImage title={title} src={coverImage} />
       </div> */}
-      <h1 className="text-center font-bold" style={{ borderBottom: 'none' }}>{title}</h1>
+      <div className="text-center">
+        <div className="text-8xl">{emoji}</div>
+        <div className="text-center text-5xl font-bold" style={{ borderBottom: 'none' }}>{title}</div>
+      </div>
       <div className="flex justify-center">
         <div className="flex flex-col items-center mr-10">
-          <div className="font-semibold">
+          <div style={{ fontWeight: "800", fontFamily: "Noto Sans JP" }}>
             Published
           </div>
           <DateFormatter dateString={date} />
         </div>
         <div className="flex flex-col items-center">
-          <div className="font-semibold">
+          <div style={{ fontWeight: "800", fontFamily: "Noto Sans JP" }}>
             Written By
           </div>
           {author.name}
