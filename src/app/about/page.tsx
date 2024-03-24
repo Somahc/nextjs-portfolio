@@ -14,6 +14,7 @@ export default function Page() {
         <h1 className="text-6xl font-bold border-b-2">About</h1>
         <Image
             className="mx-auto rounded-full py-5"
+            style={{ borderRadius: '50%' }}
             src={profilePic}
             alt="プロフィール写真"
             width={200}
