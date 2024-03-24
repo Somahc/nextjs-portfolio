@@ -8,7 +8,7 @@ import { SiDuolingo } from "react-icons/si";
 
 
 
-export const Page = () => {
+export default function Page() {
   return (
     <main>
         <h1 className="text-6xl font-bold border-b-2">About</h1>
@@ -68,5 +68,3 @@ export const Page = () => {
     </main>
   )
 }
-
-export default Page;

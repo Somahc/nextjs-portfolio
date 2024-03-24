@@ -1,5 +1,5 @@
 import { getAllPosts } from "@/lib/api";
-import { MoreStories } from "../_components/more-stories";
+// import { MoreStories } from "../_components/more-stories";
 import { PostsList } from "../_components/postsList";
 
 export default function Posts() {
