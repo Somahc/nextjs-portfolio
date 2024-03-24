@@ -18,8 +18,7 @@ export const metadata: Metadata = {
   description: `Somahcのブログです。エンジニア志望の学生が学んだことや興味を持ったことを書いています。`,
   openGraph: {
     // images: [HOME_OG_IMAGE_URL],
-    description: `Somahcのブログです。エンジニア志望の学生が学んだことや興味を持ったことを書いています。`,
-    images: [{ url: HomePic.src }],
+    // images: [{ url: HomePic.src }],
   },
   icons: [{ rel: 'icon', url: Favicon.src }],
 };
