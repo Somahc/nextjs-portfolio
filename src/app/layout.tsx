@@ -66,11 +66,11 @@ export default function RootLayout({
         <Providers>
           <Container>
             <header className="text-gray-600 body-font">
-              <div className="container mx-auto flex flex-wrap py-5 flex-col md:flex-row items-center">
-                <Link href="/" className="flex title-font font-medium items-center text-gray-900 mb-4 md:mb-0">
+              <div className="container mx-auto flex flex-wrap py-5 md:flex-row items-center">
+                <Link href="/" className="flex title-font font-medium items-center text-gray-900 mb-0">
                   <span className="dark:text-white text-xl font-bold">Somahc</span>
                 </Link>
-                <nav className="md:mr-auto md:ml-4 md:py-1 md:pl-4 md:border-l md:border-gray-400	flex flex-wrap items-center text-base justify-center">
+                <nav className="mr-auto ml-4 py-1 pl-4 border-l border-gray-400	flex flex-wrap items-center text-base justify-center">
                   <Link href="/about" className="mr-5 hover:text-gray-300">About</Link>
                   <Link href="/posts" className="mr-5 hover:text-gray-300">Blogs</Link>
                 </nav>
@@ -82,10 +82,10 @@ export default function RootLayout({
             {/* <Footer /> */}
             <footer className="text-gray-600 body-font">
               <div className="">
-                <div className="container mx-auto py-4 flex flex-wrap flex-col sm:flex-row">
-                  <p className="text-gray-500 text-sm text-center sm:text-left">© 2024 Somahc
+                <div className="container mx-auto py-4 flex flex-wrap flex-row">
+                  <p className="text-gray-500 text-sm sm:text-left">© 2024 Somahc
                   </p>
-                  <span className="inline-flex sm:ml-auto sm:mt-0 mt-2 justify-center sm:justify-start">
+                  <span className="inline-flex ml-auto mt-0 justify-center sm:justify-start">
                     <div className="ml-3 text-gray-500">
                       <a href="https://bsky.app/profile/s1greni.bsky.social"><PiButterflyFill size={20} color={'#696969'} /></a>
                     </div>
