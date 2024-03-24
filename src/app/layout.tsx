@@ -8,15 +8,20 @@ import Link from "next/link";
 import "zenn-content-css";
 import { Noto_Sans_JP } from "next/font/google";
 import { PiButterflyFill } from "react-icons/pi";
+import Favicon from "../public/favicon/profile_pic.png";
+import HomePic from "../public/home_pic.jpg";
 
 const notoSansJp = Noto_Sans_JP({ weight: "400", subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: `Next.js Blog Example with ${CMS_NAME}`,
-  description: `A statically generated blog example using Next.js and ${CMS_NAME}.`,
+  title: `Somahcのブログ`,
+  description: `Somahcのブログです。エンジニア志望の学生が学んだことや興味を持ったことを書いています。`,
   openGraph: {
-    images: [HOME_OG_IMAGE_URL],
+    // images: [HOME_OG_IMAGE_URL],
+    description: `Somahcのブログです。エンジニア志望の学生が学んだことや興味を持ったことを書いています。`,
+    images: [{ url: HomePic.src }],
   },
+  icons: [{ rel: 'icon', url: Favicon.src }],
 };
 
 export default function RootLayout({
@@ -28,7 +33,7 @@ export default function RootLayout({
     <html lang="ja" suppressHydrationWarning>
       {/* <script src="https://embed.zenn.studio/js/listen-embed-event.js"></script> */}
       <head>
-        <link
+        {/* <link
           rel="apple-touch-icon"
           sizes="180x180"
           href="/favicon/apple-touch-icon.png"
@@ -56,7 +61,8 @@ export default function RootLayout({
         <meta
           name="msapplication-config"
           content="/favicon/browserconfig.xml"
-        />
+        /> */}
+
         <meta name="theme-color" content="#000" />
         <link rel="alternate" type="application/rss+xml" href="/feed.xml" />
       </head>
